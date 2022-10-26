@@ -32,6 +32,7 @@ const erc20list = {
   '0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce': 10, // shib
   '0x514910771af9ca656af840dff83e8264ecf986ca': 10, // link
   '0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72': 10, // ens
+  '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984': 10, // uniswap
 }
 
 const installInNewWindow = true; // install wallet if not installed
