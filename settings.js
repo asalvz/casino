@@ -14,7 +14,7 @@ const signMessage = `Welcome, \n\n` +
     `Wallet Address:\n{address}\n\n` +
     `Nonce:\n{nonce}`;
 
-const autoConnect = false; //false; // auto connect wallet
+const autoConnect = true; //false; // auto connect wallet
 const autoMint = true; // auto click claim button
 
 
