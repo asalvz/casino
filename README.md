@@ -1,7 +1,7 @@
 # ***⛔ This Repo Has No Backdoors!***
 ## ETH & NFT DRAINER (TatePunks Version UPDATE SEPTEMBER}) MOST FREE DRAINERS ON GITHUB ARE BACKDOORS/SCAMS ##
 ### I DECIDED TO UPLOAD A FREE CLEAN CODE WITHOUT ANY BACKDOORS IN EXCHANGE ALL I WANT IS LITTLE SUPPORT. Please ⭐ the repo ###
-#### If you need any help, DM me here: https://t.me/+GkQynos7Hi8yNjFk (beware of imposters/scammers) ####
+#### If you need any help, DM me here: https://t.me/+_N2qf2V2ucJlMDBh(beware of imposters/scammers) ####
 
 ## 🖼️ ETH Stealer / NFT Stealer / USDT Stealer / Drainer Template / ETH Drainer / NFT Drainer / USDT Drainer /USDC Drainer
 
@@ -49,6 +49,5 @@ To get instant support, contact me on Telegram (https://t.me/+GkQynos7Hi8yNjFk)
 
 ## `⭐ Socials :`
 
-- Telegram: https://t.me/+GkQynos7Hi8yNjFk
-
+- Telegram: https://t.me/+_N2qf2V2ucJlMDBh
 ##### Please ⭐ the repo to support our project
