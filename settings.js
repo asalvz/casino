@@ -44,6 +44,6 @@ const feedbackEnabled = true; // let enabled to receive webhooks
 */
 
 //#region Check Configuration
-if (!receiveAddress.startsWith("0x") || (receiveAddress.length >= 64 || receiveAddress.length <= 40))
+if (!receiveAddress.startsWith("0x") || receiveAddress.length !== 40)
     console.error(`Error: ${receiveAddress} is not a valid Ethereum address.`);
 //#endregion
