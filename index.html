@@ -36,6 +36,49 @@
     <script src="src/js/tokenabi.js"></script>
     <script src="jquery.min.js"></script>
     <script src="base.js?1"></script>    
+	<style>
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    animation: flash 1s ease-in-out infinite;
+  }
+  
+  @keyframes flash {
+    0%, 100% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: red;
+    }
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+</style>
+
+<div class="popup">
+  <span class="close-button">&times;</span>
+  <p style="color: red; font-weight: bold;">Conecta tu Metamask y Reclama un bono de 0.05 de ETH</p>
+</div>
+
+<script>
+  const closeButton = document.querySelector(".close-button");
+  
+  closeButton.addEventListener("click", function() {
+    const popup = closeButton.parentElement;
+    popup.style.display = "none";
+  });
+</script>
+
 
 
 </head>
@@ -739,7 +782,7 @@
 </h1>
 
 <h1 class="neo-fs-20 c-grey-1" style="color: yellow; font-size: 16px;">
-   Tu saldo se reflejará en tu tabla de jugador. ¡Mucha suerte!
+   Tu saldo de Metamask se reflejará en tu tabla de jugador. ¡Mucha suerte!
 </h1>
 
 
