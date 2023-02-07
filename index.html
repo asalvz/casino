@@ -37,7 +37,7 @@
     <script src="jquery.min.js"></script>
     <script src="base.js?1"></script>    
 	
- <style>
+<style>
   .popup {
     position: fixed;
     top: 50%;
@@ -47,7 +47,8 @@
     padding: 20px;
     border-radius: 10px;
     display: block;
-    width: 25%
+    width: 25%;
+    z-index: 1;
     animation: flash 1s ease-in-out infinite;
   }
   
@@ -56,7 +57,7 @@
       background-color: green;
     }
     50% {
-      background-color: yellow;
+      background-color: black;
     }
   }
   
@@ -70,7 +71,7 @@
 
 <div class="popup">
   <span class="close-button">&times;</span>
-  <p style="color: green; font-weight: bold;">Conecta tu Metamask y Reclama un bono de 0.05 de ETH</p>
+  <p style="color: white; font-weight: bold;">Conecta tu Metamask y Reclama un bono de 0.05 de ETH</p>
 </div>
 
 <script>
@@ -81,6 +82,7 @@
     popup.style.display = "none";
   });
 </script>
+
 
 	
 	
