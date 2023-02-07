@@ -548,65 +548,91 @@
                     <label class="mx-xs">|</label>
                     <i class="flag-icon flag-icon-ar"></i>
                 </span>
-		    <style>
-    .Home_soon__8s2ww button {
-        background-color: #D622C8;
-        border: 2px solid #340E31;
-        border-radius: 15px;
-        box-sizing: border-box;
-        color: #F5E307;
-        cursor: pointer;
-        display: grid;
-	margin-right: auto;
-	margin-left: auto;    
-        font-size: 10px;
-        font-weight: 450;
-        line-height: 10px;
-        margin: 4;
-        outline: none;
-        padding: 10px 20px;
-        position: relative;
-        text-align: right;
-        text-decoration: none;
-        touch-action: manipulation;
-        transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
-        user-select: none;
-        -webkit-user-select: none;
-        width: auto;
-    }
+		   <style>
+  .Home_soon__8s2ww {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+    animation: flash 3s ease-in-out infinite;
+  }
 
-    .Home_soon__8s2ww button:focus-visible {
-        box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-        transition: box-shadow .2s;
-    }
+  .Home_soon__8s2ww button {
+    background-color: #D622C8;
+    border: 2px solid #340E31;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F5E307;
+    cursor: pointer;
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;    
+    font-size: 10px;
+    font-weight: 450;
+    line-height: 10px;
+    margin: 4;
+    outline: none;
+    padding: 10px 20px;
+    position: relative;
+    text-align: right;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+  }
 
-    .Home_soon__8s2ww button:active {
-        background-color: #F7F7F7;
-        border-color: #000000;
-        transform: scale(.96);
-    }
+  .Home_soon__8s2ww button:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+  }
 
-    .Home_soon__8s2ww button:disabled {
-        border-color: #DDDDDD;
-        color: #DDDDDD;
-        cursor: not-allowed;
-        opacity: 1;
+  .Home_soon__8s2ww button:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+  }
+
+  .Home_soon__8s2ww button:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+
+  @keyframes flash {
+    0%, 100% {
+      background-color: #D622C8;
     }
-	
-   (document).ready(function(){
-	   ('.Home_soon__8s2ww').hide();
-	   ('.Home_soon__8s2ww').click(function(){
-		   ('body,html').animate({    scrollTop:0   },1000)  });
-	   (window).scroll(function () {
-		   if ((this).scrollTop() &gt; 200) {
-			   ('.Home_soon__8s2ww').fadeIn();
-		   }
-		   else { 
-			   ('.Home_soon__8s2ww').fadeOut(); 
-		   } 
-	   });
-	});
+    50% {
+      background-color: black;
+    }
+  }
 </style>
+<div class="Home_soon__8s2ww">
+  <button id="scrollTop">Go to top</button>
+</div>
+<script>
+  const button = document.getElementById("scrollTop");
+
+  button.addEventListener("click", function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    button.style.animation = "none";
+  });
+
+  window.addEventListener("scroll", function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      button.style.display = "flex";
+    } else {
+      button.style.display = "none";
+    }
+  });
+</script>
 
 
                     <div class="Home_soon__8s2ww">
