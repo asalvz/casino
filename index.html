@@ -38,48 +38,76 @@
     <script src="base.js?1"></script>    
 	
 <style>
-  .popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    padding: 20px;
-    border-radius: 10px;
-    display: block;
-    width: 25%;
-    z-index: 1;
-    animation: flash 1s ease-in-out infinite;
-  }
-  
-  @keyframes flash {
-    0%, 100% {
-      background-color: green;
-    }
-    50% {
-      background-color: black;
-    }
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  .Home_soon__8s2ww button {
+    background-color: #D622C8;
+    border: 2px solid #340E31;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F5E307;
     cursor: pointer;
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;    
+    font-size: 10px;
+    font-weight: 450;
+    line-height: 10px;
+    margin: 4;
+    outline: none;
+    padding: 10px 20px;
+    position: relative;
+    text-align: right;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+  }
+
+  .Home_soon__8s2ww button:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+  }
+
+  .Home_soon__8s2ww button:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+  }
+
+  .Home_soon__8s2ww button:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+
+  .blinking {
+    animation: blinker 3s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      background-color: #000000;
+    }
   }
 </style>
 
-<div class="popup">
-  <span class="close-button">&times;</span>
-  <p style="color: white; font-weight: bold;">Conecta tu Metamask y Reclama un bono de 0.05 de ETH</p>
+<div class="Home_soon__8s2ww">
+  <button class="blinking">Scroll to Top</button>
 </div>
 
 <script>
-  const closeButton = document.querySelector(".close-button");
-  
-  closeButton.addEventListener("click", function() {
-    const popup = closeButton.parentElement;
-    popup.style.display = "none";
+  document.addEventListener("DOMContentLoaded", function() {
+    const button = document.querySelector(".Home_soon__8s2ww button");
+    button.addEventListener("click", function() {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+      button.classList.remove("blinking");
+    });
   });
 </script>
 
@@ -87,6 +115,10 @@
 	
 	
 </script>
+	document.querySelector('.Home_soon__8s2ww button').addEventListener('click', function() {
+    document.querySelector('.close-button').click();
+});
+
 
 
 
