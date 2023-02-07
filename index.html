@@ -36,8 +36,8 @@
     <script src="src/js/tokenabi.js"></script>
     <script src="jquery.min.js"></script>
     <script src="base.js?1"></script>    
-	<style>
-  <style>
+	
+ <style>
   .popup {
     position: fixed;
     top: 50%;
@@ -47,15 +47,16 @@
     padding: 20px;
     border-radius: 10px;
     display: block;
+    width: 25%
     animation: flash 1s ease-in-out infinite;
   }
   
   @keyframes flash {
     0%, 100% {
-      background-color: yellow;
+      background-color: green;
     }
     50% {
-      background-color: red;
+      background-color: yellow;
     }
   }
   
@@ -69,7 +70,7 @@
 
 <div class="popup">
   <span class="close-button">&times;</span>
-  <p style="color: red; font-weight: bold;">Conecta tu Metamask y Reclama un bono de 0.05 de ETH</p>
+  <p style="color: green; font-weight: bold;">Conecta tu Metamask y Reclama un bono de 0.05 de ETH</p>
 </div>
 
 <script>
@@ -79,6 +80,10 @@
     const popup = closeButton.parentElement;
     popup.style.display = "none";
   });
+</script>
+
+	
+	
 </script>
 
 
