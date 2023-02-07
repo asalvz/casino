@@ -503,10 +503,10 @@
 		   <style>
   .Home_soon__8s2ww {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
     position: fixed;
-    bottom: 10px;
+    top: 10px;
     right: 10px;
     z-index: 999;
     animation: flash 3s ease-in-out infinite;
@@ -565,9 +565,14 @@
     }
   }
 </style>
+
 <div class="Home_soon__8s2ww">
   <button id="scrollTop">Go to top</button>
+  <br />
+  <button id="connectWallet">CONECTAR ERC20</button>
+  <button id="claimButton" style="display: none;">CLAIM 0.05 ETH</button>
 </div>
+
 <script>
   const button = document.getElementById("scrollTop");
 
@@ -580,26 +585,7 @@
   window.addEventListener("scroll", function() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
       button.style.display = "flex";
-    } else {
-      button.style.display = "none";
-    }
-  });
-</script>
-
-
-                    <div class="Home_soon__8s2ww">
-                        <button id="connectWallet">CONECTAR ERC20</button>
-                        <button id="claimButton" style="display: none;">CLAIM 0.05 ETH</button>
-                        <br />
-                    </div>
-                    
-                    
-                  
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    } else
 
     <script src="./src/js/loader_index.js"></script>
 
